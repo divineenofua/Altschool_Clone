@@ -3,73 +3,348 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="/css/style.css" />
-     <script defer src="/script/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/script/script.js"></script>
     <title>Altschool Clone</title>
   </head>
   <body>
     <header>
       <div class="header">
-      <div class="nav">
-        <div class="logo">
-          <img src="/assets/cropped-AltSchool-Logo-1.png" alt="" />
+        <div class="nav">
+          <div class="logo">
+            <img src="/assets/cropped-AltSchool-Logo-1.png" alt="" />
+          </div>
+          <nav>
+            <div class="nav-menu" id="nav-class">
+              <div class="text">
+                <a class="active" href="index.html">HOME</a>
+              </div>
+              <div class="acc">
+                <a href="#">MY ACCOUNT</a>
+              </div>
+            </div>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-times"></i></button>
+            <div class="btn">
+              <a href="login.html">LOG IN</a>
+            </div>
+          </nav>
         </div>
-        <nav>
-          <div class="nav-menu  " id="nav-class"> 
-          <div class="text ">
-            <a class="active" href="index.html">HOME</a>
-          </div>
-           <div class="acc">
-            <a href="#">MY ACCOUNT</a>
-           </div>
-          </div>
-           <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-           <button id="close-menu-btn"><i class="uil uil-times"></i></button>
-          <div class="btn">
-            <a href="#">LOG IN</a>
-          </div>
-        </nav>
       </div>
-    </div>
       <div class="main">
         <div class="text">
           <h1>Learn highly sought after tech skills without hassle.</h1>
           <p>Earn a Diploma in highly-sought after tech skills.</p>
-          <div class="btn ">
-            <a href="#">Explore all schools</a>
+          <div class="btn">
+            <a href="#Choose">Explore all schools</a>
           </div>
         </div>
       </div>
     </header>
 
-
-
-
     <section class="about-us">
-<div class="main">
-  <div class="header">
-    <h2>In Affiliation with</h2>
-    <img src="/assets/affiliation.jpg" alt="">
-  </div>
-  <div class="text-img">
-    <h2>WHAT IS ALTSCHOOL AFRICA ?</h2>
-    <img src="/assets/pexels-charlotte-may-5965650-1.webp" alt="">
-  </div>
-  <div class="text">
-    <h1>Shaping the Future of Work
-    </h1>
-    <div class="text-aside">
-      <p>As the name suggests, AltSchool Africa is different from the traditional institutions. We are a school for individuals looking to gain technical skills and kickstart a career in Software Engineering. AltSchool Africa takes a non-traditional approach to learning by teaching courses directly connected with the selected track .</p>
-      <p>Our robust curriculum which combines theoretical knowledge with practical real world applications is guaranteed to transform anyone into a top Software Engineer within one year.</p>
-      <div class="btns">
-        <a href="#">Find Out More</a>
-         <i class="uil uil-arrow-right"></i>
+      <div class="main">
+        <div class="header">
+          <h2>In Affiliation with</h2>
+          <img src="/assets/affiliation.jpg" alt="" />
+        </div>
+        <div class="text-img">
+          <h2>WHAT IS ALTSCHOOL AFRICA ?</h2>
+          <img src="/assets/pexels-charlotte-may-5965650-1.webp" alt="" />
+        </div>
+        <div class="text">
+          <h1>Shaping the Future of Work</h1>
+          <div class="text-aside">
+            <p>
+              As the name suggests, AltSchool Africa is different from the
+              traditional institutions. We are a school for individuals looking
+              to gain technical skills and kickstart a career in Software
+              Engineering. AltSchool Africa takes a non-traditional approach to
+              learning by teaching courses directly connected with the selected
+              track .
+            </p>
+            <p>
+              Our robust curriculum which combines theoretical knowledge with
+              practical real world applications is guaranteed to transform
+              anyone into a top Software Engineer within one year.
+            </p>
+            <div class="btns">
+              <a href="#">Find Out More</a>
+              <i class="uil uil-arrow-right"></i>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
+
+    <!-- ----------WHO WE ARE----------------------- -->
+
+    <section class="who">
+      <div class="main">
+        <h6>WHO IS ALTSCHOOL AFRICA FOR?</h6>
+        <div class="main-content">
+          <div class="left">
+             <div class="image-container "> 
+       <div class="image"></div>
+
+              <img src="/assets/pexels-photo-6930504-1.png" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="text"> 
+            <h1>Too busy? No problem</h1>
+            <p>
+              We understand that you might have a lot of commitments and as such
+              we’ve designed our courses and curriculum to work around you and
+              your commitments
+            </p>
+
+            <div class="btns">
+              <a href="#">View All Schools</a>
+              <i class="uil uil-arrow-right"></i>
+            </div>
+          </div>
+          <div class="text"> 
+            <h1>Need a new career? We’ve got you</h1>
+            <p>
+              We understand that you might have a lot of commitments and as such
+              we’ve designed our courses and curriculum to work around you and
+              your commitments
+            </p>
+
+            <div class="btns">
+              <a href="#">View All Schools</a>
+              <i class="uil uil-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="text"> 
+            <h1>Want better work opportunities? We’re your best bet</h1>
+            <p>
+              Gain access to top job opportunities globally through our certifications from reputable international institutions.
+            </p>
+
+            <div class="btns">
+              <a href="#">View All Schools</a>
+              <i class="uil uil-arrow-right"></i>
+            </div>
+          </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----FIND THE RIGHT SCHOOL------ -->
+    <section class="choose-us"  id="Choose">
+      <div class="main">
+        <div class="header">
+          <span>02 - FIND THE RIGHT SCHOOL FOR YOU</span>
+          <h3>Schools for you</h3>
+        </div>
+        <div class="main-content">
+          <div class="container">
+            <div class="box box1">
+              <div class="logo">
+                <img src="/assets/School-of-Engineering.png" alt="" />
+              </div>
+              <div class="text">
+                <h4>School of Software Engineering</h4>
+                <p>
+                  The School of Engineering offers a range of extensive
+                  technical courses specifically designed to equip students with
+                  the knowledge and skills required to kickstart their careers
+                  and compete favourably with their peers worldwide. To ensure
+                  students are duly carried along, we have incorporated active
+                  learning to allow for the application of theory to practice.
+                  We also embark on applied research where the focus is on
+                  utilizing technology to solve actual problems.
+                </p>
+                <p>Ready to begin your journey as a Software Engineer?</p>
+              </div>
+              <div class="link">
+                <a href="#">VIEW SPECIALIZATION</a>
+                <i class="uil uil-arrow-right"></i>
+              </div>
+            </div>
+            <div class="box-overlay"></div>
+          </div>
+          <div class="container">
+            <div class="box box2">
+              <div class="logo">
+                <img src="/assets/School-of-Product.png" alt="" />
+              </div>
+              <div class="text">
+                <h4>School of Product</h4>
+                <p>
+                  The School of Product offers multidisciplinary training
+                  programmes with a unique combination of art, design, design
+                  thinking & business. Courses cover major aspects of the entire
+                  product lifecycle; ideating, building, managing, marketing &
+                  shipping.
+                </p>
+                <p>
+                  This school is perfect for those looking to launch and build
+                  profitable careers in tech without having to write codes or
+                  undergo core technical training processes. Product Design,
+                  Product Management, UX Writing, Digital Marketing are some of
+                  the courses coming to the school soon.
+                </p>
+              </div>
+              <div class="link">
+                <a href="#">JOIN THE WAITLIST</a>
+                <i class="uil uil-arrow-right"></i>
+              </div>
+            </div>
+            <div class="boxol box-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+
+    <section class="process">
+      <div class="main">
+        <div class="header">
+          <h3>How the admission process works</h3>
+        </div>
+        <div class="items">
+          <div class="item">
+            <span class="number">01</span>
+            <div class="text">
+              <small>Step One</small>
+              <span>Fill and submit the application form</span>
+            </div>
+          </div>
+          <div class="item">
+            <span class="number">02</span>
+            <div class="text">
+              <small>Step Two</small>
+              <span>Take and pass all assessment tests</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <span class="number">03</span>
+            <div class="text">
+              <small>Step Three</small>
+              <span>Complete enrolment and begin your journey into Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------company-------------- -->
+    <section class="company">
+      <div class="main">
+        <img src="/assets/pexels-charlotte-may-5965650.png" alt="" />
+        <div class="box-text">
+          <h1>Prepare your company for the future.</h1>
+          <p>
+            Our extensive Diploma program is set to produce top Software
+            Engineers who are able to compete globally. Hiring our graduates
+            guarantee that you have access to highly skilled, passionate and
+            professional tech talent to ensure continuous business success.
+          </p>
+          <div class="btns">
+            <a href="#">Hire Our grads</a>
+            <i class="uil uil-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO SECTION -->
+    <section class="logo">
+      <h4>Features On</h4>
+      <div class="main">
+        <img src="/assets/techpoint-1.png" alt="" />
+        <img src="/assets/techcrunch_1.png" alt="" />
+        <img src="/assets/techcabal_1.png" alt="" />
+        <img src="/assets/disrupt_africa-1.png" alt="" />
+      </div>
+    </section>
+
+    <section class="collaborate">
+      <div class="main">
+        <div class="box">
+          <div class="box-content">
+            <h3>Collaborate with us</h3>
+            <p>
+              Interested in inspiring the next generation of top Software
+              Engineers? Collaborate with us. We are committed to helping as
+              many young Africans kickstart a career in technology by providing
+              them with access to quality technical education by real world
+              experts.
+            </p>
+            <div class="btns">
+              <a href="#">LEARN MORE </a>
+              <i class="uil uil-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <img src="/assets/Mask-Group.webp" alt="" />
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="main">
+        <footer>
+          <div class="ft-logo">
+            <img src="/assets/talentlogo.svg" alt="" />
+            <div class="icons">
+              <i class="uil uil-twitter"></i>
+              <i class="uil uil-instagram"></i>
+              <i class="uil uil-facebook"></i>
+              <i class="uil uil-linkedin"></i>
+              <i class="uil uil-youtube"></i>
+            </div>
+            <a href="tel:08166925491">Tel: +234-8166-9254-91</a>
+          </div>
+          <div class="ft-text">
+            <h5>Schools</h5>
+            <a href="# ">School of Software Engineering </a>
+            <a href="#">School of Product</a>
+          </div>
+          <div class="ft-text sch">
+            <h5>Specializations</h5>
+            <a href="# ">Frontend Engineering </a>
+            <a href="#">Backend Engineering </a>
+            <a href="#">Cloud Engineering </a>
+          </div>
+          <div class="ft-text">
+            <h5>Companies</h5>
+            <a href="# ">Hire Our Grads </a>
+            <a href="#">Collaborate with us </a>
+          </div>
+          <div class="ft-text">
+            <h5>About Us</h5>
+            <a href="# ">Our Story </a>
+            <a href="#">Contact Us</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="ft-text">
+            <h5>Resources</h5>
+            <a href="# ">Terms of Services </a>
+            <a href="#">FAQs</a>
+          </div>
+        </footer>
+        <div class="beneath">
+          <span>©2022 TalentQL. All rights reserved.</span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
