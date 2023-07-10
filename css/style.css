@@ -660,12 +660,15 @@ padding: 50px;
      border-radius: 10px;
      display: block;
  }
- .login main{
+ .login .form{
   width: 100%;
   overflow: hidden;
  }
+ header .main .text p{
+font-size: 17px;
+ }
 /* login page */
-  .login  main .close  i {
+  .login  .form .close  i {
    position: absolute;
    right:  40px;
    border: 2px solid black;
@@ -728,22 +731,23 @@ text-align: center;
   background-color: rgb(224, 224, 248);
 
 }
+.main-content{
+  text-align: center;
+}
  
 .main-content .btns{
   margin-bottom: 70px;
-  width: fit-content;
+  text-align: center;
   background-color:#6b6ff5;
   padding: 12px 70px;
    border-radius: 30px;
-  text-align: center;
-  transition: all 0.9s ease;
-margin: 0 auto;
+   transition: all 0.9s ease;
+   color: #ffff;
+   outline: none;
+   border: none;
+}
 
  
-}
-.main-content .btns a{
-  color: #ffff;
-}
 .main-content .last{
    text-align: center;
 }
@@ -753,10 +757,132 @@ margin: 0 auto;
   display: block;
   padding: 30px 0;
 }
+.main-content .last p{
+ padding-bottom: 6px;
+}
 
 .main-content .last p > a{
   color: var(--purple);
 }
+
+
+
+
+
+
+
+/* courses Page styling */
+.main-section{
+  max-width: 1090px;
+  width: 100%;
+  margin:0 auto;
+}
+ 
+.main-container .header-content{
+  text-align: center;
+}
+.main-container .header-content img{
+border-radius: 50%;
+border: 5px solid gainsboro;
+}
+.main-container .header-content h1{
+  padding: 15px 0;
+  font-size: 35px;
+}
+.main-container .header-content .courses-bar span{
+  display: block;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  font-size: 38px;
+  font-weight: 900;
+
+}
+.main-container .header-content .courses-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+  .courses-bar .item small{
+   color: gray;
+   font-size: 16px;
+   
+}
+.main-container .header-content .courses-bar .item{
+  overflow: hidden;
+  padding-right: 20px;
+  border-right: 1px solid gainsboro;
+  padding-left: 20px;
+}
+.main-container .header-content .courses-bar .item:last-of-type{
+  border-right: none;
+}
+
+.main-content .item .btn{
+  background-color: var(--purple);
+  color: #ffff;
+  padding:  7px 35px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+
+.main-section .main-container .main-content{
+   
+  width: 100%;
+   
+}
+.main-section .main-container .main-content .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.main-section .main-container .main-content .item  .right-item {
+display: flex;
+align-items: center;
+}
+ .item-content {
+display: flex;
+justify-content: space-between;
+ margin: 40px 0;
+ border: 2px solid gainsboro;
+ border-radius: 10px;
+ padding: 20px 30px;
+ }
+ .item-content i{
+  background-color: var(--purple);
+  border-radius: 50%;
+  
+ }
+ .item-content .bottom{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+ }
+ .item-content .bottom .btn .span{
+  display: none;
+ }
+ .item-content .bottom .btn{
+  overflow: hidden;
+  color: #ffff;
+ }
+ .item-content .bottom .btn-span    {
+  font-size: 12px;
+  background-color: var(--purple);
+  padding: 10px ;
+  border-radius: 25px;
+  color: #ffff; 
+ }
+
+
+
+
+
+
 
 
 
@@ -983,6 +1109,19 @@ float: right;
   }
   .footer .main{
     margin:0 30px  ;
+  }
+  .main-section .main-container .main-content .item{
+    display:block;
+     
+  }
+  .main-section .main-container .main-content .item p{
+    padding-bottom: 20px;
+  }
+
+  .main-content .item .right-item{
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
   }
 }
 

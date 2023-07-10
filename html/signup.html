@@ -19,7 +19,7 @@
   <link href="/css/fstyle.css" rel="stylesheet" type="text/css" />
 
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
-  <script defer src="script.js"></script>
+  <script defer src="/script/wor.js"></script>
   <title>Altschool</title>
 </head>
 
@@ -69,7 +69,7 @@
     <div class="div"> 
 <div class="form-input">
   <label>First Name</label>
-  <input type="text" placeholder="First Name" required>
+  <input id="firstName" type="text" placeholder="First Name" required>
 </div>
 
 <div class="form-input">
@@ -143,11 +143,12 @@
   <div class="form-input">
   <label>Password</label>
   <input id="confirm-password" type="confirm-password" placeholder="confirm password" required>
+   <div id="text"></div>
   </div>
 </div>
 
 <div class="check"> 
-  <input type="checkbox" class="checkbox">
+  <input type="checkbox" required class="checkbox">
   <label > I accept the <span>Terms Of Use  </span> & <span>Privacy Policy</span> </label>
 </div>
 <button   type="submit" class="button">
@@ -164,5 +165,5 @@
 
   
  </body>
-
+<script src="/script/data.js"></script>
 </html>

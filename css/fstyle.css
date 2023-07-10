@@ -85,8 +85,16 @@ margin: 40px 30px;
   main p{
     text-align: center;
   }
+  #text{
+    color: red;
+   
+  }
+  #confirm-password{
+    margin-bottom: 0;
+  }
   
   .check{
+    margin-top: 20px;
     margin-bottom:40px;}
   .button  {
     padding:10px 90px;
@@ -111,6 +119,7 @@ margin: 40px 30px;
     color:#75489f;
   }
   
+
   
   .success{
     gap:5px;
