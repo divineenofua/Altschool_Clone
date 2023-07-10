@@ -36,7 +36,7 @@ function checkLogin( username, password) {
             }
         } else {
             username.style.border = '2px solid red';
-            username.title = 'incorrect password';
+            username.title = 'username / email not found';
         }
     });
 }
