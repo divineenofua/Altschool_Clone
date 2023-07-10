@@ -54,9 +54,10 @@ submit.addEventListener('click',(e) => {
         usersArray.push(newUserDetails)
    
         localStorage.setItem('usersArray', JSON.stringify(usersArray))
-        // window.location.href = "login.html";
+        window.location.href = "login.html";
         } else {
             console.log('email has been used');
+            document.querySelector('.notification').innerText = 'Email have already been used'
         }
         
         //console.log(JSON.parse(localStorage.getItem('usersArray')));

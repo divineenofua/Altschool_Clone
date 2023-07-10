@@ -9,20 +9,15 @@ openMenu.addEventListener("click", () => {
  navMenu.style.display = "flex";
  closeMenu.style.display = "inline-block";
  openMenu.style.display ="none"
-})
+});
 
 closeMenu.addEventListener("click", () => {
     openMenu.style.display ="inline-block";
     closeMenu.style.display = "none";
     navMenu.style.display = " none";
-} )
+} );
 
- closePageBtn.addEventListener( "click", () => {
- logInPage.style.display = "none";
-})
- logInbtn.addEventListener( "click", () => {
- logInPage.style.display = "block";
-})
-
-  
+ if (document.querySelector('body').id == 'courses') {
+    document.getElementById('name').textContent = localStorage.getItem('active user').toUpperCase()
+ }
  

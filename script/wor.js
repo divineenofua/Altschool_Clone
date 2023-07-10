@@ -1,5 +1,5 @@
   
- console.log("edrftygui");
+//  console.log("edrftygui");
  
  const userPassword = document.getElementById("password");
 const confirmUserPassword = document.getElementById("confirm-password");
