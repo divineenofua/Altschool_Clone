@@ -25,8 +25,3 @@ closeMenu.addEventListener("click", () => {
 })
 
 // signup page
-const userPassword = document.getElementById("password");
-const confirmUserPassword = document.getElementById("confirm-password");
-const signUpForm = document.getElementById("form");
-
-

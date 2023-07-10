@@ -19,7 +19,7 @@
   <link href="/css/fstyle.css" rel="stylesheet" type="text/css" />
 
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
-  <script defer src="script.js"></script>
+  <!-- <script defer src="script.js"></script> -->
   <title>Altschool</title>
 </head>
 
@@ -69,36 +69,36 @@
     <div class="div"> 
 <div class="form-input">
   <label>First Name</label>
-  <input type="text" placeholder="First Name" required>
+  <input type="text" placeholder="First Name" name="first name" id="first-name" required>
 </div>
 
 <div class="form-input">
-<label>Last Name</label>
-  <input type="text" placeholder="Last Name" required>
+<label for="lastName">Last Name</label>
+  <input type="text" placeholder="lastName" id="last-name" required>
 </div>
 </div>
 <div class="div"> 
 <div class="form-input">
   <label>Email</label>
-  <input type="email" placeholder="Email" required>
+  <input type="email" placeholder="Email" id="email" required>
 </div>
 <div class="form-input date">
  <label>Date of Birth</label>
-<input type="date" placeholder="set date"required>
+<input type="date" placeholder="set date" id="date" required>
 </div>
 </div>
 <div class="div"> 
 <div class="form-input dropdown">
   <label>Gender</label>
-  <select class="gender" >
+  <select id="gender" class="gender" >
     <option value="0">Select Gender</option>
-<option value="1">Male</option>
-<option value="2">Female</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
   </select>
 </div>
   <div class="form-input dropdown">
   <label>Education Level</label>
-  <select>
+  <select id="level">
     <option value="0">Select level of Education:</option>
     <option value="1">Bsc</option>
     <option value="2">Msc</option>
@@ -115,12 +115,12 @@
 <div class="div"> 
 <div class="form-input num">
   <label>Phone Number</label>
-  <input type="number" placeholder="081000000" required>
+  <input type="number" id="phone-number" placeholder="081000000" required>
 </div>
 
 <div class="form-input droping">
   <label>Country</label>
-  <select required>
+  <select id="country" required>
     <option value="0">Select Country:</option>
     <option value="1">Nigeria</option>
     <option value="2">Ghana</option>
@@ -138,11 +138,11 @@
 <div class="div"> 
   <div class="form-input">
     <label>Password</label>
-  <input id="password" type="current-password" placeholder="password" required>
+  <input id="password" type="password" placeholder="password" required>
   </div>
   <div class="form-input">
   <label>Password</label>
-  <input id="confirm-password" type="confirm-password" placeholder="confirm password" required>
+  <input id="confirm-password" type="password" placeholder="confirm password" required>
   </div>
 </div>
 
@@ -150,7 +150,7 @@
   <input type="checkbox" class="checkbox">
   <label > I accept the <span>Terms Of Use  </span> & <span>Privacy Policy</span> </label>
 </div>
-<button   type="submit" class="button">
+<button id="btn-submit"  type="submit" class="button">
    Sign Up 
 </button>
 <p>Already have an account? <a href="login.html">Log In</a></p>
@@ -160,9 +160,6 @@
   
 </main>
 </div>
-
-
-  
+<script type="module" src="../script/signup_script.js"></script>
  </body>
-
 </html>
