@@ -640,6 +640,10 @@ header .main .text {
   width: 100%;
   overflow: hidden;
 }
+ }
+ header .main .text p{
+font-size: 17px;
+ }
 /* login page */
 .login main .close i {
   position: absolute;
@@ -650,6 +654,17 @@ header .main .text {
 }
 
 .main-content .form-input input {
+  .login  .form .close  i {
+   position: absolute;
+   right:  40px;
+   border: 2px solid black;
+   border-radius: 50%;
+    cursor: pointer;
+
+  }
+  
+ 
+.main-content .form-input input{
   border: none;
 }
 
@@ -698,6 +713,8 @@ header .main .text {
   margin-bottom: 70px;
   width: fit-content;
   background-color: #6b6ff5;
+  text-align: center;
+  background-color:#6b6ff5;
   padding: 12px 70px;
   border-radius: 30px;
   text-align: center;
@@ -709,6 +726,10 @@ header .main .text {
 }
 .main-content .last {
   text-align: center;
+
+ 
+.main-content .last{
+   text-align: center;
 }
 .main-content .last .lost {
   color: black;
@@ -716,10 +737,18 @@ header .main .text {
   display: block;
   padding: 30px 0;
 }
+.main-content .last p {
+  padding-bottom: 6px;
+}
 
 .main-content .last p > a {
   color: var(--purple);
 }
+
+
+
+
+
 
 /* -----------------MEDIA QUERIES -------------- */
 
@@ -918,6 +947,18 @@ header .main .text {
   }
   .footer .main {
     margin: 0 30px;
+  }
+  .main-section .main-container .main-content .item {
+    display: block;
+  }
+  .main-section .main-container .main-content .item p {
+    padding-bottom: 20px;
+  }
+
+  .main-content .item .right-item {
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
   }
 }
 

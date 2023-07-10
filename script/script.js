@@ -24,4 +24,5 @@ closeMenu.addEventListener("click", () => {
  logInPage.style.display = "block";
 })
 
-// signup page
+  
+ 
