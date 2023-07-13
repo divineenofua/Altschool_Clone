@@ -1,6 +1,3 @@
-  
-//  console.log("edrftygui");
- 
  const userPassword = document.getElementById("password");
 const confirmUserPassword = document.getElementById("confirm-password");
 // const signUpForm = document.getElementById("form");
