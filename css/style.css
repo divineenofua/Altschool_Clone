@@ -716,21 +716,26 @@ text-align: center;
 
 .main-content .form-input .input input{
    background-color: rgb(224, 224, 248);
-     width:100%;
-       
+     width:80%;
+       /* border: 2px solid rgb(224, 224, 248);
   margin-bottom: 20px;
   padding: 7px 0;
-  border-radius: 2px;
+  border-radius: 2px; */
+  outline: none;
    
   }
-  .main-content .form-input .input i {
-      padding: 10px;
-    position: absolute;
-  }
-.main-content .form-input .input input{
+  
+.main-content .form-input .input   {
   background-color: rgb(224, 224, 248);
-
+width: 100%;
+border: 2px solid rgb(224, 224, 248);
+margin-bottom: 20px;
+padding: 7px 0;
+border-radius: 2px;
+display: flex;
+ 
 }
+ 
 .main-content{
   text-align: center;
 }
@@ -847,6 +852,11 @@ border: 5px solid gainsboro;
   color: #6b6ff5;
   font-size: 29px;
 }
+.btn .uil-angle-up{
+  background-color: white;
+  color: #6b6ff5;
+  font-size: 29px;
+}
  .uil-check{
   color: #ffff;
   font-size: 20px;
@@ -952,12 +962,16 @@ justify-content: space-between;
 .hide-section i{
   float: right;
 } 
-.course-progress{
+   .course-progress{
    background: #dcdbdb;
    text-transform: uppercase;
    padding: 20px 20px;
-   display: none;
+    display: none;
 }
+.open .course-progress{
+  display: block;
+}
+ 
 .course-progress .course-title{
   display: flex;
   justify-content: space-between;
@@ -969,9 +983,9 @@ justify-content: space-between;
 progress{
   width: 100%;
  }
- div.active{
+ /* div.active{
   display: block;
- }
+ } */
 
 
 

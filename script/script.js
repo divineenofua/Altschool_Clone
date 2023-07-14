@@ -7,55 +7,101 @@ const logInbtn = document.getElementById("login-btn");
 const searchBtn = document.getElementById("search");
 const hiddenSection = document.getElementById("hidden");
 const closehiddenSection = document.getElementById("close-hide");
-const progressBar = document.getElementById("angle-id");
-const  courseProgress = document.querySelector('.course-progress');
-const  courseProgressClass = document.querySelectorAll(".uil-angle-down");
-
-// progressBar.addEventListener("click", () => {
-//   courseProgress.classList.toggle("active");
-// // courseProgress.style.display = 'block';
-// })
-
- courseProgressClass.forEach(show => {
-show.addEventListener("click", () => {
-    courseProgress.classList.toggle("active");
-
-    // courseProgress.classList.toggle("active");
-})
-})
-
-
-
-
-
-
-searchBtn.addEventListener("click", () => {
-    hiddenSection.style.display = "block";
-     
-   })
-closehiddenSection.addEventListener("click", () => {
-    hiddenSection.style.display = "none";
-     
-   })
+const courseProgress = document.querySelectorAll(".course-progress");
+const progressIcon = document.getElementsByClassName("uil-angle-down");
+let courseShow = document.getElementsByClassName("content");
+const openAll = document.getElementById("angle-id");
 
 openMenu.addEventListener("click", () => {
- navMenu.style.display = "flex";
- closeMenu.style.display = "inline-block";
- openMenu.style.display ="none"
-})
+  navMenu.style.display = "flex";
+  closeMenu.style.display = "inline-block";
+  openMenu.style.display = "none";
+});
 
 closeMenu.addEventListener("click", () => {
-    openMenu.style.display ="inline-block";
-    closeMenu.style.display = "none";
-    navMenu.style.display = " none";
-} )
+  openMenu.style.display = "inline-block";
+  closeMenu.style.display = "none";
+  navMenu.style.display = " none";
+});
 
- closePageBtn.addEventListener( "click", () => {
- logInPage.style.display = "none";
-})
- logInbtn.addEventListener( "click", () => {
- logInPage.style.display = "block";
-})
+closePageBtn.addEventListener("click", () => {
+  logInPage.style.display = "none";
+});
+logInbtn.addEventListener("click", () => {
+  logInPage.style.display = "block";
+});
 
-  
- 
+// search text
+const messages = document.querySelector(".item-content");
+
+const message = messages.querySelector(".top");
+let messageSearch = document.getElementById("Search-input");
+
+// searches chat
+function searchMessage() {
+  messageSearch = document.getElementById("Search-input").value;
+  messageSearch = messageSearch.toLowerCase();
+  let x = document.getElementsByClassName("content");
+
+  for (i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(messageSearch)) {
+      x[i].style.display = "none";
+    } else {
+      x[i].style.display = "block";
+    }
+  }
+}
+
+// search chat
+messageSearch.addEventListener("keyup", searchMessage);
+
+searchBtn.addEventListener("click", () => {
+  hiddenSection.style.display = "block";
+});
+closehiddenSection.addEventListener("click", () => {
+  hiddenSection.style.display = "none";
+});
+
+openMenu.addEventListener("click", () => {
+  navMenu.style.display = "flex";
+  closeMenu.style.display = "inline-block";
+  openMenu.style.display = "none";
+});
+
+closeMenu.addEventListener("click", () => {
+  openMenu.style.display = "inline-block";
+  closeMenu.style.display = "none";
+  navMenu.style.display = " none";
+});
+
+closePageBtn.addEventListener("click", () => {
+  logInPage.style.display = "none";
+});
+logInbtn.addEventListener("click", () => {
+  logInPage.style.display = "block";
+});
+
+
+var faqs = document.querySelectorAll(".content");
+function faqOpen() {
+  faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+      faq.classList.toggle("open");
+
+      //  change icon
+      const icon = faq.querySelector(".btn i");
+      if (icon.className === "uil uil-angle-down") {
+        icon.className = "uil uil-angle-up";
+      } else {
+        icon.className = "uil uil-angle-down";
+      }
+    });
+  });
+}
+faqOpen();
+
+openAll.addEventListener("click", () => {
+  for (i = 0; i < faqs.length; i++) {
+    faqs[i].classList.toggle("open");
+  }
+});
