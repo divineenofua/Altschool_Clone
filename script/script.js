@@ -102,7 +102,11 @@ closeMenu.addEventListener("click", () => {
   openMenu.style.display = "inline-block";
   closeMenu.style.display = "none";
   navMenu.style.display = " none";
-});
+} );
+
+ if (document.querySelector('body').id == 'courses') {
+    document.getElementById('name').textContent = localStorage.getItem('active user').toUpperCase()
+ } ;
 
 closePageBtn.addEventListener("click", () => {
   logInPage.style.display = "none";

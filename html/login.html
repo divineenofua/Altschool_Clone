@@ -16,9 +16,6 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
-<script defer src="/script/wor.js"  ></script>
-
-  <script defer src="/script/script.js "></script>
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
    <title>Altschool</title>
 </head>
@@ -48,7 +45,7 @@
           <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
           <button id="close-menu-btn"><i class="uil uil-times"></i></button>
           <div class="btn">
-            <a href="login.html">LOG IN</a>
+            <a href="#">LOG IN</a>
          </nav>
       </div>
     </div>
@@ -57,7 +54,7 @@
         <h1>My Account</h1>
         <p>Welcome to AltSchool Africa, here’s your dashboard</p>
         <div class="btn" id="login-btn">
-          <a href="# ">Log In</a>
+          <a href="#">Log In</a>
           <i class="uil uil-arrow-right"></i>          </div>
 
         </div>
@@ -72,19 +69,19 @@
       <i class="uil uil-times"></i></div>
 <div class="main-content">
   <h2 id="log"  >Login</h2>
-  <form  id="formm"> 
-  <div class="form-input"> 
+  <div class="form-input">
     <label for="name">Username or Email</label>
     <div class="input"> 
       <i class="uil uil-user"></i>
-    <input id="login-name" type="text" required> 
+    <input id="username" type="text" required> 
     </div>
   </div>
   <div class="form-input">
     <label for="name">password</label>
     <div class="input"> 
       <i class="uil uil-lock"></i>
-    <input id="login-password" type="password" required> 
+    <input type="password" id="password" required> 
+
     </div>
   </div>
   <div class="check">
@@ -92,7 +89,7 @@
      <label for="text">Remember Me</label>
 
   </div>
-  <button type="submit" id="button"  class="btns"> Log In
+  <button type="submit" id="log-in" class="btns"> Log In
   </button>
 </form>
 <div class="last">
@@ -156,6 +153,6 @@
       </div>
     </div>
   </section>
+  <script src="../script/login_script.js"></script>
  </body>
- 
 </html>
