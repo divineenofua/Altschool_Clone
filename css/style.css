@@ -623,6 +623,7 @@ header .main .text {
 
 .login {
   position: absolute;
+
   background: #ffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 50px;
@@ -630,30 +631,25 @@ header .main .text {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 900px;
+  transform: translate(-50%, -50%);
+    max-width: 900px;
+      width: 100%;
+     z-index: 1000;
+     overflow: hidden;
+     border-radius: 10px;
+     display: block;
+ }
+ .login .form{
   width: 100%;
   z-index: 1000;
   overflow: hidden;
-  border-radius: 10px;
-  display: block;
-}
-.login main {
-  width: 100%;
-  overflow: hidden;
-}
+   }
 
 header .main .text p {
   font-size: 17px;
 }
 /* login page */
 .login main .close i {
-  position: absolute;
-  right: 40px;
-  border: 2px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.login .form .close i {
   position: absolute;
   right: 40px;
   border: 2px solid black;
@@ -706,6 +702,7 @@ header .main .text p {
   background-color: rgb(224, 224, 248);
 }
 
+
 .main-content .btns {
   margin-bottom: 70px;
   width: fit-content;
@@ -714,6 +711,8 @@ header .main .text p {
   background-color: #6b6ff5;
   padding: 12px 70px;
   border-radius: 30px;
+  color: #ffff;
+  outline: none;
   text-align: center;
   transition: all 0.9s ease;
   margin: 0 auto;
@@ -732,12 +731,14 @@ header .main .text p {
 .main-content .last {
   text-align: center;
 }
+
 .main-content .last .lost {
   color: black;
   text-decoration: underline;
   display: block;
   padding: 30px 0;
 }
+
 .main-content .last p {
   padding-bottom: 6px;
 }
@@ -745,6 +746,208 @@ header .main .text p {
 .main-content .last p > a {
   color: var(--purple);
 }
+
+/* courses Page styling */
+.main-section{
+  max-width: 1090px;
+  width: 100%;
+  margin:0 auto;
+}
+ 
+.main-container .header-content{
+  text-align: center;
+}
+.main-container .header-content img{
+border-radius: 50%;
+border: 5px solid gainsboro;
+}
+.main-container .header-content h1{
+  padding: 15px 0;
+  font-size: 35px;
+}
+.main-container .header-content .courses-bar span{
+  display: block;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  font-size: 38px;
+  font-weight: 900;
+
+}
+.main-container .header-content .courses-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+  .courses-bar .item small{
+   color: gray;
+   font-size: 16px;
+   
+}
+.main-container .header-content .courses-bar .item{
+  overflow: hidden;
+  padding-right: 20px;
+  border-right: 1px solid gainsboro;
+  padding-left: 20px;
+   
+}
+.main-container .header-content .courses-bar .item:last-of-type{
+  border-right: none;
+}
+
+.main-content .item .btn{
+  background-color: var(--purple);
+  color: #ffff;
+  padding:  7px  15px 7px  0px;
+  margin-left: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  
+}
+
+
+.main-section .main-container .main-content{
+   
+  width: 100%;
+   margin-bottom: 70px;
+}
+.main-section .main-container .main-content .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.btn .uil-angle-down{
+  background-color: white;
+  color: #6b6ff5;
+  font-size: 29px;
+}
+ .uil-check{
+  color: #ffff;
+  font-size: 20px;
+ 
+}
+.right-item .btn .uil{
+  background: transparent;
+  color: #ffff;
+  font-size: 20px;
+}
+.main-section .main-container .main-content .item  .right-item {
+display: flex;
+align-items: center;
+margin : 30px 0;
+}
+.main-content .content{
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+ .item-content {
+display: flex;
+justify-content: space-between;
+ 
+ 
+ padding: 20px 30px;
+ align-items: center;
+ text-align: center;
+ }
+ .item-content i{
+  background-color: var(--purple);
+  border-radius: 50%;
+  
+ }
+ .item-content .bottom{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+ }
+ .item-content .bottom .btn .span{
+  display: none;
+ }
+ .item-content .bottom .btn{
+  overflow: hidden;
+  color: #ffff;
+ }
+ .item-content .bottom .btn-span    {
+  font-size: 12px;
+  background-color: var(--purple);
+  padding: 10px ;
+  border-radius: 25px;
+  color: #ffff; 
+ }
+
+
+
+
+/* Absolute items */
+.hide-section{
+  background:rgb(231, 231, 253);
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+ }
+.hide-section span{
+  display: block;
+  text-align: left;
+}
+.hide-section small{
+  text-align: left;
+  display: block;
+  padding: 10px 0;
+  color: gray;
+}
+.hide-section .search{
+   
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.hide-section .search input{
+  width: 90%;
+}
+.hide-section .search .btn{
+  width: 10%;
+  background-color: #6b6ff5;
+  border-radius: 20px;
+  padding:10px;
+}
+/* .hide-section::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left:  25px solid transparent;
+  border-right:  25px solid transparent;
+  border-bottom:  25px solid blue;
+  position: absolute;
+  top: 250%;
+  left: 42%;
+} */
+.hide-section i{
+  float: right;
+} 
+.course-progress{
+   background: #dcdbdb;
+   text-transform: uppercase;
+   padding: 20px 20px;
+   display: none;
+}
+.course-progress .course-title{
+  display: flex;
+  justify-content: space-between;
+}
+.course-progress .text-span{
+  color: #6b6ff5;
+  font-weight: 900;
+}
+progress{
+  width: 100%;
+ }
+ div.active{
+  display: block;
+ }
 
 /* -----------------MEDIA QUERIES -------------- */
 
@@ -952,6 +1155,19 @@ header .main .text p {
   }
 
   .main-content .item .right-item {
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+  }
+  .main-section .main-container .main-content .item{
+    display:block;
+     
+  }
+  .main-section .main-container .main-content .item p{
+    padding-bottom: 20px;
+  }
+
+  .main-content .item .right-item{
     display: flex;
     gap: 90px;
     justify-content: space-between;

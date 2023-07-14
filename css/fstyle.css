@@ -160,10 +160,64 @@ main p {
   .page main {
     width: 100%;
   }
+
   .page main .form .div {
     display: flex;
     flex-direction: column;
+      }
+
+  .date input{ 
+    width: 100%;        
+ }
+  .droping{
+    width:50%;
   }
+  main p{
+    text-align: center;
+  }
+  #text{
+    color: red;
+   
+  }
+  #confirm-password{
+    margin-bottom: 0;
+  }
+  
+  .check{
+    margin-top: 20px;
+    margin-bottom:40px;}
+  .button  {
+    padding:10px 90px;
+    width:100%;
+    background-color:#6b6ff5;    
+    border-radius:25px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.9s ease;
+    margin-bottom: 15px;
+  }
+  .button  {
+    color: #ffff;
+  }
+  .button:hover{
+    background-color:rgb(20, 166, 224) ;
+  }
+  .text p a{
+    font-weight:700;
+  }
+  .check label span{
+    color:#75489f;
+  }
+  
+
+  
+  .success{
+    gap:5px;
+    width:90%;
+    text-align:center;
+  margin:0 auto;
+
+
   .droping {
     width: 100%;
   }
