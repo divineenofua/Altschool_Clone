@@ -18,7 +18,7 @@ const  courseProgressClass = document.querySelectorAll(".uil-angle-down");
 
  courseProgressClass.forEach(show => {
 show.addEventListener("click", () => {
-    courseProgress.classList.toggle("active");
+    show.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle("active");
 
     // courseProgress.classList.toggle("active");
 })
