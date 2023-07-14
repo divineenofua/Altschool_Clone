@@ -24,14 +24,7 @@ show.addEventListener("click", () => {
 })
 })
 
-searchBtn.addEventListener("click", () => {
-    hiddenSection.style.display = "block";
-     
-   })
-closehiddenSection.addEventListener("click", () => {
-    hiddenSection.style.display = "none";
-     
-   })
+
 
 openMenu.addEventListener("click", () => {
  navMenu.style.display = "flex";
@@ -46,15 +39,22 @@ closeMenu.addEventListener("click", () => {
 } );
 
  if (document.querySelector('body').id == 'courses') {
+    searchBtn.addEventListener("click", () => {
+        hiddenSection.style.display = "block";
+         
+       })
+    closehiddenSection.addEventListener("click", () => {
+        hiddenSection.style.display = "none";
+         
+       })
     document.getElementById('name').textContent = localStorage.getItem('active user').toUpperCase()
  }
 
-} )
 
- closePageBtn.addEventListener( "click", () => {
- logInPage.style.display = "none";
-})
+//  closePageBtn.addEventListener( "click", () => {
+//  logInPage.style.display = "none";
+// })
 
- logInbtn.addEventListener( "click", () => {
- logInPage.style.display = "block";
-})
+//  logInbtn.addEventListener( "click", () => {
+//  logInPage.style.display = "block";
+// })
