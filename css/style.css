@@ -836,8 +836,8 @@ border: 5px solid gainsboro;
 
 
 .main-section .main-container .main-content{
-   
-  width: 100%;
+ 
+  
    margin-bottom: 70px;
 }
 .main-section .main-container .main-content .item{
@@ -1229,5 +1229,16 @@ float: right;
   .login{ 
       width: 100%;
   }
+  .item-content {
+    display: flex;
+   flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+     }
+     .main-content{
+      margin: 0 30px;
+      margin-right: 30px;
+     }
 }
  
