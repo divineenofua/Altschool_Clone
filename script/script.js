@@ -62,7 +62,6 @@ function searchMessage() {
 
 
 
-
 openMenu.addEventListener("click", () => {
   navMenu.style.display = "flex";
   closeMenu.style.display = "inline-block";
@@ -96,6 +95,7 @@ closeMenu.addEventListener("click", () => {
 } );
 
  if (document.querySelector('body').id == 'courses') {
+
   let messageSearch = document.getElementById("Search-input");
 
   // search chat
@@ -115,8 +115,10 @@ closehiddenSection.addEventListener("click", () => {
       faqs[i].classList.toggle("open");
     }
   });
+
     document.getElementById('name').textContent = localStorage.getItem('active user').toUpperCase()
  } ;
+
 
 // closePageBtn.addEventListener("click", () => {
 //   logInPage.style.display = "none";
@@ -127,3 +129,4 @@ closehiddenSection.addEventListener("click", () => {
 
 
  
+
