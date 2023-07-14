@@ -30,19 +30,15 @@ function faqOpen() {
 }
 faqOpen();
 
-openAll.addEventListener("click", () => {
-  for (i = 0; i < faqs.length; i++) {
-    faqs[i].classList.toggle("open");
-  }
-});
+
 
 
 
 // search text
 const messages = document.querySelector(".item-content");
 
-const message = messages.querySelector(".top");
-let messageSearch = document.getElementById("Search-input");
+
+
 
 // searches chat
 function searchMessage() {
@@ -59,15 +55,10 @@ function searchMessage() {
   }
 }
 
-// search chat
-messageSearch.addEventListener("keyup", searchMessage);
 
-searchBtn.addEventListener("click", () => {
-  hiddenSection.style.display = "block";
-});
-closehiddenSection.addEventListener("click", () => {
-  hiddenSection.style.display = "none";
-});
+
+
+
 
 
 
@@ -84,12 +75,12 @@ closeMenu.addEventListener("click", () => {
   navMenu.style.display = " none";
 });
 
-closePageBtn.addEventListener("click", () => {
-  logInPage.style.display = "none";
-});
-logInbtn.addEventListener("click", () => {
-  logInPage.style.display = "block";
-});
+// closePageBtn.addEventListener("click", () => {
+//   logInPage.style.display = "none";
+// });
+// logInbtn.addEventListener("click", () => {
+//   logInPage.style.display = "block";
+// });
 
  
 openMenu.addEventListener("click", () => {
@@ -105,15 +96,34 @@ closeMenu.addEventListener("click", () => {
 } );
 
  if (document.querySelector('body').id == 'courses') {
+  let messageSearch = document.getElementById("Search-input");
+
+  // search chat
+messageSearch.addEventListener("keyup", searchMessage);
+
+searchBtn.addEventListener("click", () => {
+  hiddenSection.style.display = "block";
+});
+
+closehiddenSection.addEventListener("click", () => {
+  hiddenSection.style.display = "none";
+});
+
+  const message = messages.querySelector(".top");
+  openAll.addEventListener("click", () => {
+    for (i = 0; i < faqs.length; i++) {
+      faqs[i].classList.toggle("open");
+    }
+  });
     document.getElementById('name').textContent = localStorage.getItem('active user').toUpperCase()
  } ;
 
-closePageBtn.addEventListener("click", () => {
-  logInPage.style.display = "none";
-});
-logInbtn.addEventListener("click", () => {
-  logInPage.style.display = "block";
-});
+// closePageBtn.addEventListener("click", () => {
+//   logInPage.style.display = "none";
+// });
+// logInbtn.addEventListener("click", () => {
+//   logInPage.style.display = "block";
+// });
 
 
  
