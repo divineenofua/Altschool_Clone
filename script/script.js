@@ -12,24 +12,31 @@ const progressIcon = document.getElementsByClassName("uil-angle-down");
 let courseShow = document.getElementsByClassName("content");
 const openAll = document.getElementById("angle-id");
 
-openMenu.addEventListener("click", () => {
-  navMenu.style.display = "flex";
-  closeMenu.style.display = "inline-block";
-  openMenu.style.display = "none";
+var faqs = document.querySelectorAll(".content");
+function faqOpen() {
+  faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+      faq.classList.toggle("open");
+
+      //  change icon
+      const icon = faq.querySelector(".btn i");
+      if (icon.className === "uil uil-angle-down") {
+        icon.className = "uil uil-angle-up";
+      } else {
+        icon.className = "uil uil-angle-down";
+      }
+    });
+  });
+}
+faqOpen();
+
+openAll.addEventListener("click", () => {
+  for (i = 0; i < faqs.length; i++) {
+    faqs[i].classList.toggle("open");
+  }
 });
 
-closeMenu.addEventListener("click", () => {
-  openMenu.style.display = "inline-block";
-  closeMenu.style.display = "none";
-  navMenu.style.display = " none";
-});
 
-closePageBtn.addEventListener("click", () => {
-  logInPage.style.display = "none";
-});
-logInbtn.addEventListener("click", () => {
-  logInPage.style.display = "block";
-});
 
 // search text
 const messages = document.querySelector(".item-content");
@@ -62,6 +69,29 @@ closehiddenSection.addEventListener("click", () => {
   hiddenSection.style.display = "none";
 });
 
+
+
+
+openMenu.addEventListener("click", () => {
+  navMenu.style.display = "flex";
+  closeMenu.style.display = "inline-block";
+  openMenu.style.display = "none";
+});
+
+closeMenu.addEventListener("click", () => {
+  openMenu.style.display = "inline-block";
+  closeMenu.style.display = "none";
+  navMenu.style.display = " none";
+});
+
+closePageBtn.addEventListener("click", () => {
+  logInPage.style.display = "none";
+});
+logInbtn.addEventListener("click", () => {
+  logInPage.style.display = "block";
+});
+
+ 
 openMenu.addEventListener("click", () => {
   navMenu.style.display = "flex";
   closeMenu.style.display = "inline-block";
@@ -82,26 +112,4 @@ logInbtn.addEventListener("click", () => {
 });
 
 
-var faqs = document.querySelectorAll(".content");
-function faqOpen() {
-  faqs.forEach((faq) => {
-    faq.addEventListener("click", () => {
-      faq.classList.toggle("open");
-
-      //  change icon
-      const icon = faq.querySelector(".btn i");
-      if (icon.className === "uil uil-angle-down") {
-        icon.className = "uil uil-angle-up";
-      } else {
-        icon.className = "uil uil-angle-down";
-      }
-    });
-  });
-}
-faqOpen();
-
-openAll.addEventListener("click", () => {
-  for (i = 0; i < faqs.length; i++) {
-    faqs[i].classList.toggle("open");
-  }
-});
+ 

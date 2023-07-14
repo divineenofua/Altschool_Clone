@@ -671,8 +671,8 @@ font-size: 17px;
   .login  .form .close  i {
    position: absolute;
    right:  40px;
-   border: 2px solid black;
-   border-radius: 50%;
+   color:  #6b6ff5;
+ font-size: 27px;
     cursor: pointer;
 
   }
