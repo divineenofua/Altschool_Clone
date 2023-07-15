@@ -12,8 +12,9 @@ const submit = document.getElementById('btn-submit');
 const signUpForm = document.getElementById("form");
 let usersArray = [];
 
-if (localStorage.key(usersArray) == 'usersArray') {
+if (localStorage.key(usersArray)) {
     usersArray = JSON.parse(localStorage.getItem('usersArray'));
+    console.log(usersArray);
     // export {usersArray};
 }
 // console.log(usersArray, localStorage.key(usersArray))
@@ -51,7 +52,7 @@ submit.addEventListener('click',(e) => {
             confirmedPassword = userPassword.value;
         const newUserDetails = new userDetails(firstName.value, lastName.value, email.value, date.value, gender.value, level.value, phoneNumber.value, country.value, confirmedPassword);
         confirmUserPassword.style.border = '1.4px solid gray';
-        usersArray.push(newUserDetails)
+        usersArray.push(newUserDetails);
    
         localStorage.setItem('usersArray', JSON.stringify(usersArray))
         window.location.href = "login.html";
