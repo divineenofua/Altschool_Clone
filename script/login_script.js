@@ -25,21 +25,28 @@ openMenu.addEventListener("click", () => {
    } )
 
 function checkLogin( username, password) {
+    let incorrectPassword = false;
+    let validEmail = false;
     usersArray.forEach(userObj => {
         if (userObj.email == username.value || userObj.username == username.value) {
+            validEmail = true;
             username.parentElement.style.border = 'none';
             if (userObj.password == password.value) {
                 localStorage.setItem('active user', `${userObj.lastName} ${userObj.firstName}`);
+                incorrectPassword = false;
                 window.location.href = 'courses.html';
             } else {
                 password.parentElement.style.border = '2px solid red';
                 password.title = 'incorrect password';
+                incorrectPassword = true;
             }
-        } else if(userObj.email != username.value || userObj.username != username.value && password.parentElement.style.border == '2px solid red') {
+        } else if((userObj.email != username.value || userObj.username != username.value) && password.parentElement.style.border == '2px solid red' && !incorrectPassword) {
+            incorrectPassword = true;
+            validEmail = false;
             password.parentElement.style.border = 'none';
             username.parentElement.style.border = '2px solid red';
             username.title = 'username / email not found';
-        } else {
+        } else if ((userObj.email != username.value || userObj.username != username.value) && !validEmail) {
             username.parentElement.style.border = '2px solid red';
             username.title = 'username / email not found';
         }
