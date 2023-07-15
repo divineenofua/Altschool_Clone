@@ -1191,3 +1191,8 @@ progress {
   color: red;
   padding-left: 10px;
 }
+.warning-text {
+  color: red;
+  position: relative;
+  top: -10px;
+}

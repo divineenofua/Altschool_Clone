@@ -31,22 +31,27 @@ function checkLogin( username, password) {
         if (userObj.email == username.value || userObj.username == username.value) {
             validEmail = true;
             username.parentElement.style.border = 'none';
+            username.parentElement.nextElementSibling.innerText = '';
             if (userObj.password == password.value) {
                 localStorage.setItem('active user', `${userObj.lastName} ${userObj.firstName}`);
+                username.parentElement.nextElementSibling.innerText = '';
                 incorrectPassword = false;
                 window.location.href = 'courses.html';
             } else {
                 password.parentElement.style.border = '2px solid red';
                 password.title = 'incorrect password';
                 incorrectPassword = true;
+                password.parentElement.nextElementSibling.innerText = 'incorrect password';
             }
-        } else if((userObj.email != username.value || userObj.username != username.value) && password.parentElement.style.border == '2px solid red' && !incorrectPassword) {
+        } else if((userObj.email != username.value || userObj.username != username.value) && password.parentElement.style.border == '2px solid red' && !incorrectPassword && !validEmail) {
             incorrectPassword = true;
             validEmail = false;
+            username.parentElement.nextElementSibling.innerText = 'username not found';
             password.parentElement.style.border = 'none';
             username.parentElement.style.border = '2px solid red';
             username.title = 'username / email not found';
         } else if ((userObj.email != username.value || userObj.username != username.value) && !validEmail) {
+            username.parentElement.nextElementSibling.innerText = 'username not found';
             username.parentElement.style.border = '2px solid red';
             username.title = 'username / email not found';
         }
