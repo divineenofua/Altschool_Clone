@@ -58,9 +58,9 @@ function searchMessage() {
 
 
 
- courseProgressClass.forEach(show => {
-show.addEventListener("click", () => {
-    show.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle("active");
+//  courseProgressClass.forEach(show => {
+// show.addEventListener("click", () => {
+//     show.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle("active")})});
 
 
 
@@ -130,6 +130,4 @@ closehiddenSection.addEventListener("click", () => {
 //   logInPage.style.display = "block";
 // });
 
-
- 
 
