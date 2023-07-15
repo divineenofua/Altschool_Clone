@@ -632,34 +632,32 @@ header .main .text {
   transform: translate(-50%, -50%);
   max-width: 900px;
   transform: translate(-50%, -50%);
-    max-width: 900px;
-      width: 100%;
-     z-index: 1000;
-     overflow: hidden;
-     border-radius: 10px;
-     display: block;
- }
- .login .form{
+  max-width: 900px;
   width: 100%;
   z-index: 1000;
   overflow: hidden;
-   }
+  border-radius: 10px;
+  display: block;
+}
+.login .form {
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
 
 header .main .text p {
   font-size: 17px;
 }
 /* login page */
-  .login  .form .close  i {
-   position: absolute;
-   right:  40px;
-   color:  #6b6ff5;
- font-size: 27px;
-    cursor: pointer;
+.login .form .close i {
+  position: absolute;
+  right: 40px;
+  color: #6b6ff5;
+  font-size: 27px;
+  cursor: pointer;
+}
 
-  }
-  
- 
-.main-content .form-input input{
+.main-content .form-input input {
   border: none;
 }
 
@@ -688,33 +686,31 @@ header .main .text p {
   padding-bottom: 20px;
 }
 
-.main-content .form-input .input input{
-   background-color: rgb(224, 224, 248);
-     width:80%;
-       /* border: 2px solid rgb(224, 224, 248);
+.main-content .form-input .input input {
+  background-color: rgb(224, 224, 248);
+  width: 80%;
+  /* border: 2px solid rgb(224, 224, 248);
   margin-bottom: 20px;
   padding: 7px 0;
   border-radius: 2px; */
   outline: none;
-   
-  }
-  
-.main-content .form-input .input   {
-  background-color: rgb(224, 224, 248);
-width: 100%;
-border: 2px solid rgb(224, 224, 248);
-margin-bottom: 20px;
-padding: 7px 0;
-border-radius: 2px;
-display: flex;
- 
 }
- 
-.main-content{
+
+.main-content .form-input .input {
+  background-color: rgb(224, 224, 248);
+  width: 100%;
+  border: 2px solid rgb(224, 224, 248);
+  margin-bottom: 20px;
+  padding: 7px 0;
+  border-radius: 2px;
+  display: flex;
+}
+
+.main-content {
   text-align: center;
 }
- 
-.main-content .btns{
+
+.main-content .btns {
   margin-bottom: 70px;
   width: fit-content;
   background-color: #6b6ff5;
@@ -731,8 +727,6 @@ display: flex;
 
 #log-in {
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .main-content .btns a {
@@ -759,176 +753,160 @@ display: flex;
 }
 
 /* courses Page styling */
-.main-section{
+.main-section {
   max-width: 1090px;
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
 }
- 
-.main-container .header-content{
+
+.main-container .header-content {
   text-align: center;
 }
-.main-container .header-content img{
-border-radius: 50%;
-border: 5px solid gainsboro;
+.main-container .header-content img {
+  border-radius: 50%;
+  border: 5px solid gainsboro;
 }
-.main-container .header-content h1{
+.main-container .header-content h1 {
   padding: 15px 0;
   font-size: 35px;
 }
-.main-container .header-content .courses-bar span{
+.main-container .header-content .courses-bar span {
   display: block;
   padding-bottom: 25px;
   padding-top: 15px;
   font-size: 38px;
   font-weight: 900;
-
 }
-.main-container .header-content .courses-bar{
+.main-container .header-content .courses-bar {
   display: flex;
   align-items: center;
   justify-content: center;
- }
- 
-  .courses-bar .item small{
-   color: gray;
-   font-size: 16px;
-   
 }
-.main-container .header-content .courses-bar .item{
+
+.courses-bar .item small {
+  color: gray;
+  font-size: 16px;
+}
+.main-container .header-content .courses-bar .item {
   overflow: hidden;
   padding-right: 20px;
   border-right: 1px solid gainsboro;
   padding-left: 20px;
-   
 }
-.main-container .header-content .courses-bar .item:last-of-type{
+.main-container .header-content .courses-bar .item:last-of-type {
   border-right: none;
 }
 
-.main-content .item .btn{
+.main-content .item .btn {
   background-color: var(--purple);
   color: #ffff;
-  padding:  7px  15px 7px  0px;
+  padding: 7px 15px 7px 0px;
   margin-left: 10px;
   border-radius: 30px;
   font-size: 15px;
-  
 }
 
-
-.main-section .main-container .main-content{
- 
-  
-   margin-bottom: 70px;
+.main-section .main-container .main-content {
+  margin-bottom: 70px;
 }
-.main-section .main-container .main-content .item{
+.main-section .main-container .main-content .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-
 }
-.btn .uil-angle-down{
+.btn .uil-angle-down {
   background-color: white;
   color: #6b6ff5;
   font-size: 29px;
 }
-.btn .uil-angle-up{
+.btn .uil-angle-up {
   background-color: white;
   color: #6b6ff5;
   font-size: 29px;
 }
- .uil-check{
+.uil-check {
   color: #ffff;
   font-size: 20px;
- 
 }
-.right-item .btn .uil{
+.right-item .btn .uil {
   background: transparent;
   color: #ffff;
   font-size: 20px;
 }
-.main-section .main-container .main-content .item  .right-item {
-display: flex;
-align-items: center;
-margin : 30px 0;
+.main-section .main-container .main-content .item .right-item {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
 }
-.main-content .content{
+.main-content .content {
   border: 2px solid gainsboro;
   border-radius: 10px;
   margin: 20px 0;
 }
- .item-content {
-display: flex;
-justify-content: space-between;
- 
- 
- padding: 20px 30px;
- align-items: center;
- text-align: center;
- }
- .item-content i{
+.item-content {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px 30px;
+  align-items: center;
+  text-align: center;
+}
+.item-content i {
   background-color: var(--purple);
   border-radius: 50%;
-  
- }
- .item-content .bottom{
+}
+.item-content .bottom {
   display: flex;
   gap: 20px;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
- }
- .item-content .bottom .btn .span{
+}
+.item-content .bottom .btn .span {
   display: none;
- }
- .item-content .bottom .btn{
+}
+.item-content .bottom .btn {
   overflow: hidden;
   color: #ffff;
- }
- .item-content .bottom .btn-span    {
+}
+.item-content .bottom .btn-span {
   font-size: 12px;
   background-color: var(--purple);
-  padding: 10px ;
+  padding: 10px;
   border-radius: 25px;
-  color: #ffff; 
- }
-
-
-
+  color: #ffff;
+}
 
 /* Absolute items */
-.hide-section{
-  background:rgb(231, 231, 253);
+.hide-section {
+  background: rgb(231, 231, 253);
   border-radius: 10px;
   padding: 20px;
   display: none;
- }
-.hide-section span{
+}
+.hide-section span {
   display: block;
   text-align: left;
 }
-.hide-section small{
+.hide-section small {
   text-align: left;
   display: block;
   padding: 10px 0;
   color: gray;
 }
-.hide-section .search{
-   
+.hide-section .search {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-.hide-section .search input{
+.hide-section .search input {
   width: 90%;
 }
-.hide-section .search .btn{
+.hide-section .search .btn {
   width: 10%;
   background-color: #6b6ff5;
   border-radius: 20px;
-  padding:10px;
+  padding: 10px;
 }
 /* .hide-section::before{
   content: "";
@@ -941,31 +919,31 @@ justify-content: space-between;
   top: 250%;
   left: 42%;
 } */
-.hide-section i{
+.hide-section i {
   float: right;
-} 
-   .course-progress{
-   background: #dcdbdb;
-   text-transform: uppercase;
-   padding: 20px 20px;
-    display: none;
 }
-.open .course-progress{
+.course-progress {
+  background: #dcdbdb;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  display: none;
+}
+.open .course-progress {
   display: block;
 }
- 
-.course-progress .course-title{
+
+.course-progress .course-title {
   display: flex;
   justify-content: space-between;
 }
-.course-progress .text-span{
+.course-progress .text-span {
   color: #6b6ff5;
   font-weight: 900;
 }
-progress{
+progress {
   width: 100%;
- }
- /* div.active{
+}
+/* div.active{
   display: block;
  } */
 
@@ -979,7 +957,6 @@ progress{
     display: inline-block;
     background: transparent;
     font-size: 18.8px;
-    color: var(--color-white);
     cursor: pointer;
     padding: 5px;
     border: 1px solid black;
@@ -1179,15 +1156,14 @@ progress{
     gap: 90px;
     justify-content: space-between;
   }
-  .main-section .main-container .main-content .item{
-    display:block;
-     
+  .main-section .main-container .main-content .item {
+    display: block;
   }
-  .main-section .main-container .main-content .item p{
+  .main-section .main-container .main-content .item p {
     padding-bottom: 20px;
   }
 
-  .main-content .item .right-item{
+  .main-content .item .right-item {
     display: flex;
     gap: 90px;
     justify-content: space-between;
@@ -1200,15 +1176,15 @@ progress{
   }
   .item-content {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
-     }
-     .main-content{
-      margin: 0 30px;
-      margin-right: 30px;
-     }
+  }
+  .main-content {
+    margin: 0 30px;
+    margin-right: 30px;
+  }
 }
 
 .notification {
