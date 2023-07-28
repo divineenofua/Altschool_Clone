@@ -11,7 +11,7 @@ const courseProgress = document.querySelectorAll(".course-progress");
 const progressIcon = document.getElementsByClassName("uil-angle-down");
 let courseShow = document.getElementsByClassName("content");
 const openAll = document.getElementById("angle-id");
-
+const openAlt = document.getElementById("angle-id");
 var faqs = document.querySelectorAll(".content");
 function faqOpen() {
   faqs.forEach((faq) => {

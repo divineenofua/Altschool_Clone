@@ -4,30 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-   
-  <link
-  rel="stylesheet"
-  href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
- 
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
-   <title>Altschool</title>
+  <link rel="stylesheet" href="/css/fstyle.css">
+  <title>Altschool</title>
 </head>
 <style>
-  header{
-     background: linear-gradient(90deg,#860afb, #222222 );
-     color: #ffff;
-     margin-bottom: 150px;
+  header {
+    background: linear-gradient(90deg, #860afb, #222222);
+    color: #ffff;
+    margin-bottom: 150px;
   }
 </style>
- <body>
+
+<body>
   <header>
     <div class="header">
       <div class="nav">
@@ -47,184 +42,397 @@
           <button id="close-menu-btn"><i class="uil uil-times"></i></button>
           <div class="btn">
             <a href="index.html">LOG OUT</a>
-         </nav>
+        </nav>
       </div>
     </div>
-    <div class="main">
-      <div class="text">
-        <h1>My Account</h1>
-        <p>Welcome to AltSchool Africa, here’s your dashboard</p>
-        
-      </div>
-    </div>
+
   </header>
 
-<main class="main-section">
-    <div class="main-container">
-        <p>Welcome to AltSchool Africa. This is your first semester, irrespective of your course ( Frontend, Backend, Cloud ), the first semester learning will be inclusive of all learning tracks.
+  <div class="main-section">
+    <div class="main-text-items">
+      <div class="item">
+        <h3>School Of Engineering: First Semester</h3>
+        <div class="text-bar">
+          <progress style="background-color: #860afb;" value="90" max="100"></progress>
+          <span>80% COMPLETE</span>
+          <small>
+            Last activity on June 29, 2023 12:00 pm
+          </small>
+          <div class="btn">Complete</div>
+        </div>
+
+      </div>
+      <div class="text">
+        <p>Welcome to AltSchool Africa. This is your first semester, irrespective of your course ( Frontend, Backend,
+          Cloud ), the first semester learning will be inclusive of all learning tracks.
 
         </p>
-        <div class="text">
-<span>Objective:</span>
-<p>At the end of the first semester, you are expected to have a proper grasp of the basic concepts that will shape up a foundation for your accelerated learning through the next 2 semesters. You will have a good understanding of the basics of computing, computers, data structures, and algorithms. In addition to this, you will be well grounded in the fundamentals of programming, basic HTML, CSS and JavaScript. The topics are organised into monthly modules with weekly components. </p>
+      </div>
+      <div class="text">
+        <span>Objective:</span>
+        <p>At the end of the first semester, you are expected to have a proper grasp of the basic concepts that will
+          shape up a foundation for your accelerated learning through the next 2 semesters. You will have a good
+          understanding of the basics of computing, computers, data structures, and algorithms. In addition to this, you
+          will be well grounded in the fundamentals of programming, basic HTML, CSS and JavaScript. The topics are
+          organised into monthly modules with weekly components. </p>
 
+      </div>
+      <div class="text">
+        <span>Prerequisite:</span>
+        <p>The student taking this course is expected to be familiar with using the computer, the internet and
+          researching resources online. Knowledge of programming and being comfortable with a language is valuable and
+          being comfortable working in the terminal is an advantage. However, these are not compulsory requirements to
+          take the course. </p>
+
+      </div>
+      <div class="text">
+        <span>Instruction </span>
+        <p>Courses would be released on a weekly basis. Every week, the course for that week would be made available.
+          You would have full access to previous courses but would only be able to view the next week's course when it's
+          actually next week. </p>
+
+      </div>
+      <div class="text">
+        <span>Learning</span>
+        <p>Learning is a continuous process. While we would cover as many concepts as possible, we also advice you to
+          make research on your own to further your learning. Not only would this broaden your knowledge on the said
+          concept, it'll make your problem solving and researching skills better. </p>
+
+      </div>
+
+      <div class="text">
+        <span>Relaxation</span>
+        <p>It's 100% okay to relax and do nothing once in a while, set realistic goals in your learning progress and
+          take time out of your free period to engage in other activities. Make friends with your peers and communicate
+          with respect and empathy.
+
+        </p>
+
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="course-header">
+        <h2>Course Content</h2>
+        <div class="btn ">
+          <i id="angle-ig" class="uil uil-angle-down angle-id"></i>
+          <span>Expand All</span>
         </div>
-        <div class="text">
-            <span>Prerequisite:</span>
-            <p>The student taking this course is expected to be familiar with using the computer, the internet and researching resources online. Knowledge of programming and being comfortable with a language is valuable and being comfortable working in the terminal is an advantage. However, these are not compulsory requirements to take the course. </p>
-            
-                    </div>
-                    <div class="text">
-                        <span>Prerequisite:</span>
-                        <p>The student taking this course is expected to be familiar with using the computer, the internet and researching resources online. Knowledge of programming and being comfortable with a language is valuable and being comfortable working in the terminal is an advantage. However, these are not compulsory requirements to take the course. </p>
-                        
-                                </div>
-                                <div class="text">
-                                    <span>Prerequisite:</span>
-                                    <p>The student taking this course is expected to be familiar with using the computer, the internet and researching resources online. Knowledge of programming and being comfortable with a language is valuable and being comfortable working in the terminal is an advantage. However, these are not compulsory requirements to take the course. </p>
-                                    
-                                            </div>
-                                            <div class="text">
-                                                <span>Prerequisite:</span>
-                                                <p>The student taking this course is expected to be familiar with using the computer, the internet and researching resources online. Knowledge of programming and being comfortable with a language is valuable and being comfortable working in the terminal is an advantage. However, these are not compulsory requirements to take the course. </p>
-                                                
-                                                        </div>
-        </div>
-
-        <div class="main-content">
-            <div class="item header">
-                <p>Your courses</p>
-                <div class="right-item">
-                    <i id="search"  class= "fas fa-search" ></i>
-                    <div class="btn ">
-                      <i id="angle-id"   class="uil uil-angle-down"></i>
-                      <span>Expand All</span>
-                    </div>
-                </div>
- 
-            </div>
-            <div id="hidden" class="hide-section">
-               <i id="close-hide" class="uil uil-times"></i>
-              <span>Search Courses</span>
-              <small>course Name</small>
-              <div class="search">
-               <input id="Search-input" type="search" >
-               <div class="btn">Search</div>
-              </div>
-             </div>
-             <div  class="content close"> 
-            <div class="item-content">
-                <div class="top">
-                    <i   class="uil uil-check"></i>
-                    <a class="link" href="#">School Of Engineering:First Semester</a>
-                </div>
-                <div class="bottom">
-                    <div class="btn-span ">
-                        <span class="btn-span1" >  COMPLETE</span>
-                    </div>
-                    <div class="btn">
-                      <i id="angle-id" class="uil uil-angle-down"></i>
-                      <span class="span">Expand All</span>
-                    </div>
-                </div>
-              </div>
-                <div   class="course-progress  ">
-                  <div class="course-title">
-                    <small>course progress</small>
-                    <div class="text">
-                     <small class="text-span">100% Complete</small>
-                     <small>39/39 Steps</small>
-                    </div>
-                  </div>
-                  <progress value="100" max="100"></progress>
-                </div>
-            </div>
-
-            <div class="content close"> 
+      </div>
+      <div class="course-item">
+        <h5>MONTH 1: WEEK 1</h5>
+        <div class="in-item">
+          <div class="content ">
             <div class="item-content">
               <div class="top">
-                  <i class="uil uil-check"></i>
-                  <a class="link" href="#">AltSchool Of Engineering Pre-Resumption</a>
+
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">Welcome to AltSchool Africa</a>
+                <div class="span ">
+                  <!-- <span class="btn-span" >  3 topics</span> -->
+                </div>
               </div>
               <div class="bottom">
-                  <div class="btn-span ">
-                      <span class="btn-span1" >NOT COMPLETE</span>
-                  </div>
-                  <div class="btn">
-                    <i   class="uil uil-angle-down"></i>
-                    <span class="span">Expand All</span>
-                  </div>
-              </div>
-          </div>
-          <div    class="course-progress ">
-            <div class="course-title">
-              <small>course progress</small>
-              <div class="text">
-               <small class="text-span">70%  Complete</small>
-               <small>39/39 Steps</small>
+                <!-- <div class="btn">
+                <i id="angle-id" class="uil uil-angle-down"></i>
+                <span class="span">Expand </span>
+              </div> -->
               </div>
             </div>
-            <progress value="70" max="100"></progress>
-          </div>
-        </div>
-        <div class="content  "> 
-          <div class="item-content">
-            <div class="top">
-                <i class="uil uil-check"></i>
-                <a class="link" href="#">AltSchool Of Engineering:Home Study Kit</a>
-            </div>
-            <div class="bottom">
-                <div class="btn-span ">
-                    <span class="btn-span1" >  COMPLETE</span>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
                 </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">Quick Flight</a>
+                <div class="span ">
+                  <span class="btn-span"> 5 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">
+                  The AltSchool Learning Process</a>
+                <div class="span ">
+                  <span class="btn-span"> 6 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">Introduction to The Altschool LMS</a>
+                <div class="span ">
+                  <span class="btn-span"> 3 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
                 <div class="btn">
                   <i id="angle-id" class="uil uil-angle-down"></i>
-                    <span class="span">Expand All</span>
+                  <span class="spand">Expand </span>
                 </div>
-            </div>
-        </div>
-        <div class="course-progress ">
-          <div class="course-title">
-            <small>course progress</small>
-            <div class="text">
-             <small class="text-span">100% Complete</small>
-             <small>39/39 Steps</small>
-            </div>
-          </div>
-          <progress value="100" max="100"></progress>
-        </div>
-      </div>
-      <div class="content close"> 
-        <div class="item-content">
-          <div class="top">
-              <i class="uil uil-check"></i>
-              <a class="link" href="#">Open Source Contribution</a>
-          </div>
-          <div class="bottom">
-              <div class="btn-span ">
-                  <span class="btn-span1" >NOT COMPLETE </span>
               </div>
-              <div class="btn">
-                  <i  class="uil uil-angle-down"></i>
-                  <span class="span">Expand All</span>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
               </div>
+              <progress value="100" max="100"></progress>
+            </div>
           </div>
-      </div>
-      <div  class="course-progress  ">
-        <div class="course-title">
-          <small>course progress</small>
-          <div class="text">
-           <small class="text-span">50%  Complete</small>
-           <small>39/39 Steps</small>
-          </div>
-        </div>
-        <progress value="50" max="100"></progress>
-      </div>
+
+
         </div>
       </div>
 
+
+      <div class="course-item">
+        <h5>MONTH 1: WEEK 2 </h5>
+        <div class="in-item">
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">Introduction to JavaScript</a>
+                <div class="span ">
+                  <span class="btn-span"> 3 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i id="angle-id" class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">
+                  JavaScript Fundamentals
+                </a>
+                <div class="span ">
+                  <span class="btn-span"> 6 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i id="angle-id" class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">Putting It All Together</a>
+                <div class="span ">
+                  <span class="btn-span"> 3 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i id="angle-id" class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="course-item">
+        <h5>MONTH 1: WEEK 3 </h5>
+        <div class="in-item">
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">
+                  Promises, async/await</a>
+                <div class="span ">
+                  <span class="btn-span">5 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i id="angle-id" class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">
+                  OOP in JavaScript
+                </a>
+                <div class="span ">
+                  <span class="btn-span"> 6 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i id="angle-id" class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+          <div class="content ">
+            <div class="item-content">
+              <div class="top">
+                <i class="uil uil-check"></i>
+                <a class="link" href="#">Open Source Version</a>
+                <div class="span ">
+                  <span class="btn-span"> 3 topics</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="btn">
+                  <i id="angle-id" class="uil uil-angle-down"></i>
+                  <span class="spand">Expand </span>
+                </div>
+              </div>
+            </div>
+            <div class="course-progress  ">
+              <div class="course-title">
+                <small>course progress</small>
+                <div class="text">
+                  <small class="text-span">100% Complete</small>
+                  <small>39/39 Steps</small>
+                </div>
+              </div>
+              <progress value="100" max="100"></progress>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
-</main>
+
+  </div>
+  </main>
 
 
 
@@ -285,7 +493,7 @@
       </div>
     </div>
   </section>
- </body>
- <script   src="/script/script.js"></script>
+</body>
+<script src="/script/script.js"></script>
 
 </html>
