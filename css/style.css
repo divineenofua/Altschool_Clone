@@ -1216,7 +1216,11 @@ progress {
   .choose-us .main .main-content .container {
     height:970px;
   }
-
+  .company .main {
+    margin: 0 15px;
+  
+    
+  }
   .collaborate .main .box .box-content .btns {
     padding: 5px 15px;
   }
