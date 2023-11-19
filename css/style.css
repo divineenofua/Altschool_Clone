@@ -1235,3 +1235,8 @@ progress {
     display: none;
   }
 }
+@media (max-width: 397px) {
+  .choose-us .main .main-content .container {
+    height:1100px;
+  }
+}
